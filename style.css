@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, rgb(0, 210, 255), rgb(58, 123, 213));
+  color: rgb(34, 30, 30);
+}
+
+header,
+form,
+.sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  padding: 2em;
+}
+
+form input,
+form button {
+  padding: 0.5em;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+
+form input {
+  min-width: 30%;
+}
+
+form button {
+  background: rgb(53, 236, 53);
+  border: none;
+  box-shadow: 0.2rem 0.2rem 0.1rem gray;
+  margin-left: 0.5em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: rgb(15, 184, 15);
+  color: rgb(34, 32, 32);
+  box-shadow: 0.2rem 0.2rem 0.1rem black;
+}
+
+.item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.item {
+  margin: 0.5em;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.item li {
+  flex: 1;
+}
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+.marked {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.btn {
+  color: green;
+}
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
